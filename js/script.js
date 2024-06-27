@@ -18,7 +18,7 @@ $("#btn").on("click", function () {
 //APIキーを指定
 const API_KEY = '5f4c8f89c6b92faa';// HOTPEPPER APIキー
 const KEYWORD = $("#keyword").val();// 追加
-const URL = 'https://webservice.recruit.co.jp/hotpepper/shop/v1/?key=' + API_KEY + '&keyword=' + encodeURIComponent(KEYWORD) ;
+const URL = 'https://webservice.recruit.co.jp/hotpepper/shop/v1/?key=' + API_KEY + '&keyword=' + encodeURIComponent(KEYWORD) + '&format=jsonp';
 // '&format=json'
 
 $.getJSON(URL, function (data) {
